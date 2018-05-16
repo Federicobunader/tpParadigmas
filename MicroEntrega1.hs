@@ -26,6 +26,8 @@ lod addr microcontrolador = aumentarContador microcontrolador { acumA = (memoria
 aumentarContador :: Microcontrolador -> Microcontrolador
 aumentarContador microcontrolador = microcontrolador {contadorPrograma = contadorPrograma microcontrolador + 1}
 
+funcionSuma :: Microcontrolador-> Int -> Int -> Microcontrolador
+funcionSuma  microcontrolador valor1 valor2 = (add.(lodv valor2).swap.(lodv valor1)) microcontrolador
 
 
 
